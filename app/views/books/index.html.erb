@@ -1,0 +1,24 @@
+<h1>圖書館管理系統</h1>
+
+  <%= link_to "新增書本", new_book_path %>
+
+  <table>
+    <thead>
+      <tr>
+        <td>書名</td>
+        <td>簡介</td>
+        <td>作者姓名</td>
+        <td>售價</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% @books.each do |book| %>
+      <tr>
+        <td><%= book.name %></td>
+        <td><%= book.introduction %></td>
+        <td><%= book.author %></td>
+        <td><%= book.price %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
