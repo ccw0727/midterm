@@ -1,6 +1,7 @@
   <h1>新增書本</h1>
 
-  <%= form_for(@book) do |f| %>
+  <%= render "form", book: @book %>
+
     <%= f.label :name, "書本" %>
     <%= f.text_field :name %> <br />
 
