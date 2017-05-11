@@ -1,21 +1,2 @@
-  <h1>新增書本</h1>
-
-  <%= render "form", book: @book %>
-
-    <%= f.label :name, "書本" %>
-    <%= f.text_field :name %> <br />
-
-    <%= f.label :introduction, "簡介" %>
-    <%= f.text_field :introduction %> <br />
-
-    <%= f.label :author, "作者姓名" %>
-    <%= f.text_field :author %> <br />
-
-    <%= f.label :price, "售價" %>
-    <%= f.text_area :price %> <br />
-
-    <%= f.submit %>
-  <% end %>
-
-  <br />
-  <%= link_to '回書本列表', books_path %>
+<h1>Edit Book</h1>
+<%= render 'form', book: @book %>
